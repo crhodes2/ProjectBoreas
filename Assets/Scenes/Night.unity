@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04706084, g: 0.071297534, b: 0.11308751, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -263,3 +264,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1df304a0e5bccd4496ed0c9b0de3760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _days: 0
+  _hours: 6
+  _minutes: 59
+  _seconds: 0
+  _counter: 55
+  _dawnStartTime: 7
+  _dayStartTime: 9
+  _duskStartTime: 17
+  _darkStartTime: 20
+  currentHour: 1
+  _sunDimTime: 0.01
+  _dawnSunIntensity: 0.5
+  _daySunIntensity: 1
+  _duskSunIntensity: 0.25
+  _nightSunIntensity: 0
+  _dayPhases: 0

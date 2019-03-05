@@ -198,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 76548526}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 61.29, y: 3.215, z: -16.936}
-  m_LocalScale: {x: 0.0050828, y: 4.0686, z: 1.0239}
+  m_LocalScale: {x: 0.0050828, y: 4.048298, z: 3.328494}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -439,13 +439,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919438527}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.363, y: 4.158, z: -26.722}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 61.42, y: 4.158, z: -15.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1109410187
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109410187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.8, y: 3.215, z: -16.452}
+  m_LocalPosition: {x: 63.02, y: 3.215, z: -16.452}
   m_LocalScale: {x: 0.0050828, y: 4.0686, z: 1.0898391}
   m_Children: []
   m_Father: {fileID: 0}
@@ -621,13 +621,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301620893}
-  m_LocalRotation: {x: -0, y: -0.7132437, z: -0, w: 0.7009161}
-  m_LocalPosition: {x: 61.308, y: 3.215, z: -15.934}
-  m_LocalScale: {x: 0.0050828, y: 4.0686, z: 1.0248215}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 61.29, y: 3.2, z: -15.93}
+  m_LocalScale: {x: 0.0050828, y: 4.0686, z: 3.328494}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -90.999, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1662091485
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 1662091488}
   - component: {fileID: 1662091487}
   - component: {fileID: 1662091486}
+  - component: {fileID: 1662091491}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -732,6 +733,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1662091491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662091485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd828872d92c3a94090d23b7b719f1e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultEvents:
+    OnValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  interactWithoutGrab: 0
+  connectedTo: {fileID: 0}
+  direction: 0
+  activationDistance: 0.058088493
+  buttonStrength: 5
+  events:
+    OnPush:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11500000, guid: ca789f2e2e2cb5d4f9896a1565c8b7de, type: 3}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1883873562
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883873562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.8, y: 3.215, z: -16.441}
+  m_LocalPosition: {x: 59.65, y: 3.215, z: -16.441}
   m_LocalScale: {x: 0.0050828, y: 4.0686, z: 1.0239}
   m_Children: []
   m_Father: {fileID: 0}
